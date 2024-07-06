@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+body{
+    background: #191f36;
+    color: aliceblue;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: #191f36;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2.3rem;
+    color: aliceblue;
+    margin-left: 4rem;
+    font-weight: 700;
+}
+
+.menu a {
+    font-size: 1.3rem;
+    color: aliceblue;
+    margin-left: 2rem;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.menu a:hover{
+    color: #59B2F4;
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: aliceblue;
+    display: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+span{
+    color: #59B2F4;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-img img{
+    width: 25vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.home-content p{
+    font-size: 1.3rem;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid #59B2F4;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #59B2F4;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+    background: #59B2F4;
+    color: #262B40;
+    box-shadow: 0 0 1rem #59B2F4;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #59B2F4;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #59B2F4;
+    font-size: 1.6rem;
+    color: aliceblue;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+/* ----- Sobre ----- */
+
+.sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: #262B40;
+}
+
+.sobre-img img{
+    width: 35vw;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.sobre-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+
+.sobre-content h3{
+    font-size: 2.6rem;
+}
+
+.sobre-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
