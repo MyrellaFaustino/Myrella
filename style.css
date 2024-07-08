@@ -41,16 +41,29 @@ section{
     font-weight: 700;
 }
 
+.menu{
+    display: flex;
+}
+
 .menu a {
     font-size: 1.3rem;
     color: aliceblue;
-    margin-left: 2rem;
     font-weight: 600;
-    transition: .5s;
+    margin-left: 2rem;
 }
 
-.menu a:hover{
-    color: #59B2F4;
+.action::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #59B2F4;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.action:hover::after{
+    width: 100%;
 }
 
 #menu-icon{
