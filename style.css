@@ -137,20 +137,23 @@ h1{
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
-    background: #59B2F4;
+    background: #191f36;
+    border: 2px solid #59B2F4;
     border-radius: 4rem;
-    box-shadow: none;
     font-size: 1.6rem;
-    color: #191f36;
+    color: #59B2F4;
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
 }
 
 .btn:hover{
-    box-shadow: 0 0 1rem #59B2F4;
-    background: #191f36;
-    color: #59B2F4;
+    background: #59B2F4;
+    color: #191f36;
+}
+
+.just{
+    text-align: justify;
 }
 
 /* ----- Sobre ----- */
@@ -194,16 +197,14 @@ h1{
 
 .servicos-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 2rem;
 }
 
 .servicos-container .servicos-box {
-    flex: 1 1 30rem;
+
     background: #191f36;
-    padding: 3rem 2rem 4rem;
+ 
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid #262B40;
@@ -211,7 +212,7 @@ h1{
 }
 
 .servicos-box .servicos-container:hover{
-    border-color: #59B2F4;
+    border: #59B2F4;
     transform: scale(1.02);
 }
 
@@ -312,5 +313,29 @@ h1{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: #262B40;
+    background: #191f36;
+}
+
+.footer-text{
+    font-size: 1.6rem;
+}
+
+.footericon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem 1rem;
+    background: #59B2F4;
+    border-radius: .8rem;
+    transition: .5s ease;
+    border: 2px solid #59B2F4;
+}
+
+.footericon:hover{
+    background: #191f36;
+}
+
+.footericon a i{
+    font-size: 2.4rem;
+    color: #262B40;
 }
